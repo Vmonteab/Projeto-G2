@@ -124,12 +124,12 @@ void printar(int c)
     while (temp != NULL)
     {  
         if(c==cont){
-        printf("\n Variacao dos batimentos cardiacos: %d  ", temp->dados);
+        printf("\n Variacao dos batimentos cardiacos: %d  ", temp->dados); // É mostrada a variação dos dados dos batimentos cardíacos
         temp = temp->prox;
         printf("\n Variacao do acelerometro: %d  ", temp->dados);
-        temp = temp->prox;
+        temp = temp->prox; // É mostrada a variação dos dados do acelerômetro
         printf("\n Variacao do giroscopio: %d  ", temp->dados);
-        temp = temp->prox;
+        temp = temp->prox;// É mostrada a variação dos dados do giroscópio
     }
     temp = temp->prox;
         cont++;
